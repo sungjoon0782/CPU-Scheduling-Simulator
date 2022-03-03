@@ -1,9 +1,7 @@
-*Name: Sungjoon Kim
-*Student ID: 107951338
-*Class: CSCI 3453 (Operating System Concept)
-*Lab #: 2
+## Description
+	This is a CPU scheduling simulator which will be using FCFS (First Come First Serve), SJF (Shortest Job First), PP (Preemptive Priority), and RR (Round Robin.)
 
-*Description: 
+
 
 main.cpp: It reads input file, and store information of process control blocks.
 	  With input 0, it does FCFS(First Come First Serve)
