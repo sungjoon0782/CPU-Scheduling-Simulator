@@ -16,12 +16,12 @@ This is a CPU scheduling simulator which will be using FCFS (First Come First Se
 
 ## PCB.h: 
 	It has information of 'PCB' class.
-	1) Getters and Setters
-	2) 'printPCB' that prints out information of PCB.
-	3) 'increment_context' that increments the number of context switching of PCB.
-	4) 'increment_process' that increments the number of processed CPU burst of PCB.
-	5) 'responsed' changes 'response' to true if PCB has get responsed.
-	6) 'check_finish' checks if the PCB has been finished or not.
+	  1) Getters and Setters
+	  2) 'printPCB' that prints out information of PCB.
+	  3) 'increment_context' that increments the number of context switching of PCB.
+	  4) 'increment_process' that increments the number of processed CPU burst of PCB.
+	  5) 'responsed' changes 'response' to true if PCB has get responsed.
+	  6) 'check_finish' checks if the PCB has been finished or not.
 	
 	
 	
@@ -32,10 +32,10 @@ This is a CPU scheduling simulator which will be using FCFS (First Come First Se
 
 ## ready_queue.h: 
 	It has implementation of queue.
-		1) Enqueue, Dequeue, Peek, isFull, isEmpty, size (basic functions of queue)
-		2) 'get_front' returns the front object / 'get_rear' returns the rear object
-		3) 'pri_sort' sorts the queue with priority of PCB
-		4) 'sort_back' sorts it back to the original order, which is ordered with arrival time of PCB.
+	  1) Enqueue, Dequeue, Peek, isFull, isEmpty, size (basic functions of queue)
+	  2) 'get_front' returns the front object / 'get_rear' returns the rear object
+	  3) 'pri_sort' sorts the queue with priority of PCB
+	  4) 'sort_back' sorts it back to the original order, which is ordered with arrival time of PCB.
 
 
 
