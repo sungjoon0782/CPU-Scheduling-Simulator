@@ -1,11 +1,11 @@
 # CPU Scheduling Simulator
 
 ## Description
-	This is a CPU scheduling simulator which will be using FCFS (First Come First Serve), SJF (Shortest Job First), PP (Preemptive Priority), and RR (Round Robin.)
+This is a CPU scheduling simulator which will be using FCFS (First Come First Serve), SJF (Shortest Job First), PP (Preemptive Priority), and RR (Round Robin.)
 
 
 
-main.cpp: It reads input file, and store information of process control blocks.
+## main.cpp: It reads input file, and store information of process control blocks.
 	  With input 0, it does FCFS(First Come First Serve)
 	  With input 1, it does SJF(Shortest Job First)
 	  With input 2, it does PP(Preemptive Priority)
@@ -13,7 +13,7 @@ main.cpp: It reads input file, and store information of process control blocks.
 
 
 
-PCB.h: It has information of 'PCB' class.
+## PCB.h: It has information of 'PCB' class.
 	1) Getters and Setters
 	2) 'printPCB' that prints out information of PCB.
 	3) 'increment_context' that increments the number of context switching of PCB.
@@ -23,11 +23,11 @@ PCB.h: It has information of 'PCB' class.
 	
 	
 	
-PCB.cpp: It has implementation of PCB.h 
+## PCB.cpp: It has implementation of PCB.h 
 
 
 
-ready_queue.h: It has implementation of queue.
+## ready_queue.h: It has implementation of queue.
 		1) Enqueue, Dequeue, Peek, isFull, isEmpty, size (basic functions of queue)
 		2) 'get_front' returns the front object / 'get_rear' returns the rear object
 		3) 'pri_sort' sorts the queue with priority of PCB
@@ -38,12 +38,12 @@ ready_queue.h: It has implementation of queue.
 
 
 
-*Sample output:
+## *Sample output:
 
-sungjoon@sungjoon-VirtualBox:~/Downloads/Lab2/Kim1338$ ./Kim1338 input10 0
 ********************************************
 ******** Scheduling Algorithm: FCFS ********
 ********************************************
+
        pid   arrival CPU-burst      Pri.    finish   waiting      t.a.     resp.   Context
          1         0        10        37        10         0        10         0         0
          2         1         3         0        13         9        12         9         0
@@ -55,13 +55,12 @@ sungjoon@sungjoon-VirtualBox:~/Downloads/Lab2/Kim1338$ ./Kim1338 input10 0
          8        10         6        70        45        29        35        29         0
          9        13         1        15        46        32        33        32         0
         10        15         9         7        55        31        40        31         0
+
 Average CPU burst time = 5.5 ms,      Average waiting time = 20.1 ms
 Average turn around time = 25.6 ms,   Average response time = 20.1 ms
 Total No. of Context Switching Performed = 0
 
 
-
-sungjoon@sungjoon-VirtualBox:~/Downloads/Lab2/Kim1338$ ./Kim1338 input10 1
 ********************************************
 ******** Scheduling Algorithm: SJF *********
 ********************************************
@@ -81,8 +80,6 @@ Average turn around time = 20.3 ms,   Average response time = 14.8 ms
 Total No. of Context Switching Performed = 0
 
 
-
-sungjoon@sungjoon-VirtualBox:~/Downloads/Lab2/Kim1338$ ./Kim1338 input10 2
 ********************************************
 ******** Scheduling Algorithm: PP *********
 ********************************************
@@ -102,8 +99,6 @@ Average turn around time = 27.2 ms,   Average response time = 19.5 ms
 Total No. of Context Switching Performed = 4
 
 
-
-sungjoon@sungjoon-VirtualBox:~/Downloads/Lab2/Kim1338$ ./Kim1338 input10 3 4
 ********************************************
 ******** Scheduling Algorithm: RR ********
 ******** Quantum = 4              ********
