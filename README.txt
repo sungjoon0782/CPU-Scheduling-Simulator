@@ -1,3 +1,5 @@
+# CPU Scheduling Simulator
+
 ## Description
 	This is a CPU scheduling simulator which will be using FCFS (First Come First Serve), SJF (Shortest Job First), PP (Preemptive Priority), and RR (Round Robin.)
 
